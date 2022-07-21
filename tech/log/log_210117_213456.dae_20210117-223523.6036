@@ -1,0 +1,4 @@
+Log file created at: 2021/01/17 22:35:23
+Running on machine: DESKTOP-QPBO2U2
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0117 22:35:23.110507 15268 eyesight_standalone.cpp:2422] START LOGGING TO c:\programdata\studio\log\log_210117_213456.dae_

@@ -1,0 +1,1204 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<eyesight> 
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_DARK_PINK" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.984 0.588 0.670" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_LIGHT_PURPLE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.584 0.435 0.619" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_GREEN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.133 0.466 0.250" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_NEON_GREEN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.749 0.996 0" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_DARK_BLUE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0 0.121 0.623" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_LIGHT_BLUE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.678 0.909 0.933" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_RED" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.784 0.098 0.031" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-TRANSLUCENT_YELLOW" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.956 0.8 0.180" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material diffuse_ao_factor="1.0" displacement_method="bump" glossy_ao_factor="0.0" heterogeneous_volume="False" name="MILKY-GLOW_IN_DARK_RED" subsurface_ao_factor="0.0" subsurface_factor="1.100000023841858" transmission_ao_factor="0.0" use_local_tuning="True" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+    <shader>
+      <group group_name="DirtOnScratchMixGroup" name="DirtOnScratchMixGroup">
+        <input name="Fac" type="float" />
+        <input name="Shader" type="closure" />
+        <input name="DirtShader" type="closure" />
+        <input name="Vector" type="vector" />
+        <output name="Shader" type="closure" />
+      </group>
+      <mix_closure name="MixShader">
+        <input name="Fac" type="float" value="0.200000" />
+      </mix_closure>
+      <principled_bsdf distribution="ggx" name="PrincipledBSDF" subsurface_method="burley">
+        <input name="Subsurface" type="float" value="1.000000" />
+        <input name="Metallic" type="float" value="0.000000" />
+        <input name="Specular" type="float" value="0.500000" />
+        <input name="SpecularTint" type="float" value="0.000000" />
+        <input name="Anisotropic" type="float" value="0.000000" />
+        <input name="AnisotropicRotation" type="float" value="0.000000" />
+        <input name="Sheen" type="float" value="0.000000" />
+        <input name="SheenTint" type="float" value="0.500000" />
+        <input name="Clearcoat" type="float" value="0.000000" />
+        <input name="ClearcoatRoughness" type="float" value="0.000000" />
+        <input name="IOR" type="float" value="1.490000" />
+        <input name="Transmission" type="float" value="0.500000" />
+        <input name="TransmissionRoughness" type="float" value="0.000000" />
+        <input name="ClearcoatNormal" type="vector" value="0.0 0.0 0.0" />
+        <input name="Tangent" type="vector" value="0.0 0.0 0.0" />
+      </principled_bsdf>
+      <emission name="Emission">
+        <input name="Strength" type="float" value="2.000000" />
+      </emission>
+      <group group_name="UVGroup" name="UVGroup">
+        <input name="InColor" type="color" />
+        <input name="WorldPos" type="vector" />
+        <input name="MinRoughness" type="float" />
+        <input name="MaxRoughness" type="float" />
+        <output name="OutColor" type="color" />
+        <output name="OutRoughness" type="float" />
+      </group>
+      <group group_name="ScratchGroup" name="ScratchGroup">
+        <input name="WorldPos" type="vector" />
+        <input name="Normal" type="vector" />
+        <input name="Distance" type="float" value="0.050000" />
+        <output name="Normal" type="vector" />
+        <output name="DirtStrength" type="float" />
+        <output name="DirtBSDF" type="closure" />
+      </group>
+      <value name="MinRoughness" value="0.05000000149011612" />
+      <value name="MaxRoughness" value="0.5" />
+      <group group_name="NormalGroup" name="NormalGroup">
+        <output name="Normal" type="vector" />
+      </group>
+      <vector_transform convert_from="object" convert_to="world" name="VectorTransform" type="point" />
+      <texture_coordinate name="TextureCoordinate" />
+      <color name="RGB" value="0.878 0.407 0.360" />
+      <color name="RGB_GlowDark" value="0.878 0.407 0.360" />
+      <vector name="SubsurfaceRadius" value="0.7 0.7 0.7" />
+      <group group_name="STICKER-GROUP" name="Group">
+        <input name="Shader" type="closure" />
+        <output name="Shader" type="closure" />
+      </group>
+      <connect from_node="PrincipledBSDF" from_socket="BSDF" to_node="MixShader" to_socket="Shader1" />
+      <connect from_node="Emission" from_socket="Emission" to_node="MixShader" to_socket="Shader2" />
+      <connect from_node="TextureCoordinate" from_socket="Object" to_node="VectorTransform" to_socket="Vector" />
+      <connect from_node="RGB" from_socket="Color" to_node="UVGroup" to_socket="InColor" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="UVGroup" to_socket="WorldPos" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="BaseColor" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="SubsurfaceColor" />
+      <connect from_node="UVGroup" from_socket="OutRoughness" to_node="PrincipledBSDF" to_socket="Roughness" />
+      <connect from_node="ScratchGroup" from_socket="Normal" to_node="PrincipledBSDF" to_socket="Normal" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="ScratchGroup" to_socket="WorldPos" />
+      <connect from_node="MinRoughness" from_socket="Value" to_node="UVGroup" to_socket="MinRoughness" />
+      <connect from_node="MaxRoughness" from_socket="Value" to_node="UVGroup" to_socket="MaxRoughness" />
+      <connect from_node="DirtOnScratchMixGroup" from_socket="Shader" to_node="Group" to_socket="Shader" />
+      <connect from_node="ScratchGroup" from_socket="DirtBSDF" to_node="DirtOnScratchMixGroup" to_socket="DirtShader" />
+      <connect from_node="ScratchGroup" from_socket="DirtStrength" to_node="DirtOnScratchMixGroup" to_socket="Fac" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="DirtOnScratchMixGroup" to_socket="Vector" />
+      <connect from_node="NormalGroup" from_socket="Normal" to_node="ScratchGroup" to_socket="Normal" />
+      <connect from_node="MixShader" from_socket="Shader" to_node="DirtOnScratchMixGroup" to_socket="Shader" />
+      <connect from_node="RGB_GlowDark" from_socket="Color" to_node="Emission" to_socket="Color" />
+      <connect from_node="SubsurfaceRadius" from_socket="Vector" to_node="PrincipledBSDF" to_socket="SubsurfaceRadius" />
+      <connect from_node="Group" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    </shader>
+</material>
+<material diffuse_ao_factor="1.0" displacement_method="bump" glossy_ao_factor="0.0" heterogeneous_volume="False" name="MILKY-GLOW_IN_DARK_ORANGE" subsurface_ao_factor="0.0" subsurface_factor="1.100000023841858" transmission_ao_factor="0.0" use_local_tuning="True" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+    <shader>
+      <group group_name="DirtOnScratchMixGroup" name="DirtOnScratchMixGroup">
+        <input name="Fac" type="float" />
+        <input name="Shader" type="closure" />
+        <input name="DirtShader" type="closure" />
+        <input name="Vector" type="vector" />
+        <output name="Shader" type="closure" />
+      </group>
+      <mix_closure name="MixShader">
+        <input name="Fac" type="float" value="0.200000" />
+      </mix_closure>
+      <principled_bsdf distribution="ggx" name="PrincipledBSDF" subsurface_method="burley">
+        <input name="Subsurface" type="float" value="1.000000" />
+        <input name="Metallic" type="float" value="0.000000" />
+        <input name="Specular" type="float" value="0.500000" />
+        <input name="SpecularTint" type="float" value="0.000000" />
+        <input name="Anisotropic" type="float" value="0.000000" />
+        <input name="AnisotropicRotation" type="float" value="0.000000" />
+        <input name="Sheen" type="float" value="0.000000" />
+        <input name="SheenTint" type="float" value="0.500000" />
+        <input name="Clearcoat" type="float" value="0.000000" />
+        <input name="ClearcoatRoughness" type="float" value="0.000000" />
+        <input name="IOR" type="float" value="1.490000" />
+        <input name="Transmission" type="float" value="0.500000" />
+        <input name="TransmissionRoughness" type="float" value="0.000000" />
+        <input name="ClearcoatNormal" type="vector" value="0.0 0.0 0.0" />
+        <input name="Tangent" type="vector" value="0.0 0.0 0.0" />
+      </principled_bsdf>
+      <emission name="Emission">
+        <input name="Strength" type="float" value="2.000000" />
+      </emission>
+      <group group_name="UVGroup" name="UVGroup">
+        <input name="InColor" type="color" />
+        <input name="WorldPos" type="vector" />
+        <input name="MinRoughness" type="float" />
+        <input name="MaxRoughness" type="float" />
+        <output name="OutColor" type="color" />
+        <output name="OutRoughness" type="float" />
+      </group>
+      <group group_name="ScratchGroup" name="ScratchGroup">
+        <input name="WorldPos" type="vector" />
+        <input name="Normal" type="vector" />
+        <input name="Distance" type="float" value="0.050000" />
+        <output name="Normal" type="vector" />
+        <output name="DirtStrength" type="float" />
+        <output name="DirtBSDF" type="closure" />
+      </group>
+      <value name="MinRoughness" value="0.05000000149011612" />
+      <value name="MaxRoughness" value="0.5" />
+      <group group_name="NormalGroup" name="NormalGroup">
+        <output name="Normal" type="vector" />
+      </group>
+      <vector_transform convert_from="object" convert_to="world" name="VectorTransform" type="point" />
+      <texture_coordinate name="TextureCoordinate" />
+      <color name="RGB" value="0.941 0.670 0.349" />
+      <color name="RGB_GlowDark" value="0.941 0.670 0.349" />
+      <vector name="SubsurfaceRadius" value="0.7 0.7 0.7" />
+      <group group_name="STICKER-GROUP" name="Group">
+        <input name="Shader" type="closure" />
+        <output name="Shader" type="closure" />
+      </group>
+      <connect from_node="PrincipledBSDF" from_socket="BSDF" to_node="MixShader" to_socket="Shader1" />
+      <connect from_node="Emission" from_socket="Emission" to_node="MixShader" to_socket="Shader2" />
+      <connect from_node="TextureCoordinate" from_socket="Object" to_node="VectorTransform" to_socket="Vector" />
+      <connect from_node="RGB" from_socket="Color" to_node="UVGroup" to_socket="InColor" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="UVGroup" to_socket="WorldPos" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="BaseColor" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="SubsurfaceColor" />
+      <connect from_node="UVGroup" from_socket="OutRoughness" to_node="PrincipledBSDF" to_socket="Roughness" />
+      <connect from_node="ScratchGroup" from_socket="Normal" to_node="PrincipledBSDF" to_socket="Normal" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="ScratchGroup" to_socket="WorldPos" />
+      <connect from_node="MinRoughness" from_socket="Value" to_node="UVGroup" to_socket="MinRoughness" />
+      <connect from_node="MaxRoughness" from_socket="Value" to_node="UVGroup" to_socket="MaxRoughness" />
+      <connect from_node="DirtOnScratchMixGroup" from_socket="Shader" to_node="Group" to_socket="Shader" />
+      <connect from_node="ScratchGroup" from_socket="DirtBSDF" to_node="DirtOnScratchMixGroup" to_socket="DirtShader" />
+      <connect from_node="ScratchGroup" from_socket="DirtStrength" to_node="DirtOnScratchMixGroup" to_socket="Fac" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="DirtOnScratchMixGroup" to_socket="Vector" />
+      <connect from_node="NormalGroup" from_socket="Normal" to_node="ScratchGroup" to_socket="Normal" />
+      <connect from_node="MixShader" from_socket="Shader" to_node="DirtOnScratchMixGroup" to_socket="Shader" />
+      <connect from_node="RGB_GlowDark" from_socket="Color" to_node="Emission" to_socket="Color" />
+      <connect from_node="SubsurfaceRadius" from_socket="Vector" to_node="PrincipledBSDF" to_socket="SubsurfaceRadius" />
+      <connect from_node="Group" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    </shader>
+</material>
+<material diffuse_ao_factor="1.0" displacement_method="bump" glossy_ao_factor="0.0" heterogeneous_volume="False" name="MILKY-GLOW_IN_DARK_GREEN" subsurface_ao_factor="0.0" subsurface_factor="1.100000023841858" transmission_ao_factor="0.0" use_local_tuning="True" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+    <shader>
+      <group group_name="DirtOnScratchMixGroup" name="DirtOnScratchMixGroup">
+        <input name="Fac" type="float" />
+        <input name="Shader" type="closure" />
+        <input name="DirtShader" type="closure" />
+        <input name="Vector" type="vector" />
+        <output name="Shader" type="closure" />
+      </group>
+      <mix_closure name="MixShader">
+        <input name="Fac" type="float" value="0.200000" />
+      </mix_closure>
+      <principled_bsdf distribution="ggx" name="PrincipledBSDF" subsurface_method="burley">
+        <input name="Subsurface" type="float" value="1.000000" />
+        <input name="Metallic" type="float" value="0.000000" />
+        <input name="Specular" type="float" value="0.500000" />
+        <input name="SpecularTint" type="float" value="0.000000" />
+        <input name="Anisotropic" type="float" value="0.000000" />
+        <input name="AnisotropicRotation" type="float" value="0.000000" />
+        <input name="Sheen" type="float" value="0.000000" />
+        <input name="SheenTint" type="float" value="0.500000" />
+        <input name="Clearcoat" type="float" value="0.000000" />
+        <input name="ClearcoatRoughness" type="float" value="0.000000" />
+        <input name="IOR" type="float" value="1.490000" />
+        <input name="Transmission" type="float" value="0.500000" />
+        <input name="TransmissionRoughness" type="float" value="0.000000" />
+        <input name="ClearcoatNormal" type="vector" value="0.0 0.0 0.0" />
+        <input name="Tangent" type="vector" value="0.0 0.0 0.0" />
+      </principled_bsdf>
+      <emission name="Emission">
+        <input name="Strength" type="float" value="2.000000" />
+      </emission>
+      <group group_name="UVGroup" name="UVGroup">
+        <input name="InColor" type="color" />
+        <input name="WorldPos" type="vector" />
+        <input name="MinRoughness" type="float" />
+        <input name="MaxRoughness" type="float" />
+        <output name="OutColor" type="color" />
+        <output name="OutRoughness" type="float" />
+      </group>
+      <group group_name="ScratchGroup" name="ScratchGroup">
+        <input name="WorldPos" type="vector" />
+        <input name="Normal" type="vector" />
+        <input name="Distance" type="float" value="0.050000" />
+        <output name="Normal" type="vector" />
+        <output name="DirtStrength" type="float" />
+        <output name="DirtBSDF" type="closure" />
+      </group>
+      <value name="MinRoughness" value="0.05000000149011612" />
+      <value name="MaxRoughness" value="0.5" />
+      <group group_name="NormalGroup" name="NormalGroup">
+        <output name="Normal" type="vector" />
+      </group>
+      <vector_transform convert_from="object" convert_to="world" name="VectorTransform" type="point" />
+      <texture_coordinate name="TextureCoordinate" />
+      <color name="RGB" value="0.466 0.749 0.564" />
+      <color name="RGB_GlowDark" value="0.466 0.749 0.564" />
+      <vector name="SubsurfaceRadius" value="0.7 0.7 0.7" />
+      <group group_name="STICKER-GROUP" name="Group">
+        <input name="Shader" type="closure" />
+        <output name="Shader" type="closure" />
+      </group>
+      <connect from_node="PrincipledBSDF" from_socket="BSDF" to_node="MixShader" to_socket="Shader1" />
+      <connect from_node="Emission" from_socket="Emission" to_node="MixShader" to_socket="Shader2" />
+      <connect from_node="TextureCoordinate" from_socket="Object" to_node="VectorTransform" to_socket="Vector" />
+      <connect from_node="RGB" from_socket="Color" to_node="UVGroup" to_socket="InColor" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="UVGroup" to_socket="WorldPos" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="BaseColor" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="SubsurfaceColor" />
+      <connect from_node="UVGroup" from_socket="OutRoughness" to_node="PrincipledBSDF" to_socket="Roughness" />
+      <connect from_node="ScratchGroup" from_socket="Normal" to_node="PrincipledBSDF" to_socket="Normal" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="ScratchGroup" to_socket="WorldPos" />
+      <connect from_node="MinRoughness" from_socket="Value" to_node="UVGroup" to_socket="MinRoughness" />
+      <connect from_node="MaxRoughness" from_socket="Value" to_node="UVGroup" to_socket="MaxRoughness" />
+      <connect from_node="DirtOnScratchMixGroup" from_socket="Shader" to_node="Group" to_socket="Shader" />
+      <connect from_node="ScratchGroup" from_socket="DirtBSDF" to_node="DirtOnScratchMixGroup" to_socket="DirtShader" />
+      <connect from_node="ScratchGroup" from_socket="DirtStrength" to_node="DirtOnScratchMixGroup" to_socket="Fac" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="DirtOnScratchMixGroup" to_socket="Vector" />
+      <connect from_node="NormalGroup" from_socket="Normal" to_node="ScratchGroup" to_socket="Normal" />
+      <connect from_node="MixShader" from_socket="Shader" to_node="DirtOnScratchMixGroup" to_socket="Shader" />
+      <connect from_node="RGB_GlowDark" from_socket="Color" to_node="Emission" to_socket="Color" />
+      <connect from_node="SubsurfaceRadius" from_socket="Vector" to_node="PrincipledBSDF" to_socket="SubsurfaceRadius" />
+      <connect from_node="Group" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    </shader>
+</material>
+<material diffuse_ao_factor="1.0" displacement_method="bump" glossy_ao_factor="0.0" heterogeneous_volume="False" name="MILKY-GLOW_IN_DARK_BLUE" subsurface_ao_factor="0.0" subsurface_factor="1.100000023841858" transmission_ao_factor="0.0" use_local_tuning="True" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+    <shader>
+      <group group_name="DirtOnScratchMixGroup" name="DirtOnScratchMixGroup">
+        <input name="Fac" type="float" />
+        <input name="Shader" type="closure" />
+        <input name="DirtShader" type="closure" />
+        <input name="Vector" type="vector" />
+        <output name="Shader" type="closure" />
+      </group>
+      <mix_closure name="MixShader">
+        <input name="Fac" type="float" value="0.200000" />
+      </mix_closure>
+      <principled_bsdf distribution="ggx" name="PrincipledBSDF" subsurface_method="burley">
+        <input name="Subsurface" type="float" value="1.000000" />
+        <input name="Metallic" type="float" value="0.000000" />
+        <input name="Specular" type="float" value="0.500000" />
+        <input name="SpecularTint" type="float" value="0.000000" />
+        <input name="Anisotropic" type="float" value="0.000000" />
+        <input name="AnisotropicRotation" type="float" value="0.000000" />
+        <input name="Sheen" type="float" value="0.000000" />
+        <input name="SheenTint" type="float" value="0.500000" />
+        <input name="Clearcoat" type="float" value="0.000000" />
+        <input name="ClearcoatRoughness" type="float" value="0.000000" />
+        <input name="IOR" type="float" value="1.490000" />
+        <input name="Transmission" type="float" value="0.500000" />
+        <input name="TransmissionRoughness" type="float" value="0.000000" />
+        <input name="ClearcoatNormal" type="vector" value="0.0 0.0 0.0" />
+        <input name="Tangent" type="vector" value="0.0 0.0 0.0" />
+      </principled_bsdf>
+      <emission name="Emission">
+        <input name="Strength" type="float" value="2.000000" />
+      </emission>
+      <group group_name="UVGroup" name="UVGroup">
+        <input name="InColor" type="color" />
+        <input name="WorldPos" type="vector" />
+        <input name="MinRoughness" type="float" />
+        <input name="MaxRoughness" type="float" />
+        <output name="OutColor" type="color" />
+        <output name="OutRoughness" type="float" />
+      </group>
+      <group group_name="ScratchGroup" name="ScratchGroup">
+        <input name="WorldPos" type="vector" />
+        <input name="Normal" type="vector" />
+        <input name="Distance" type="float" value="0.050000" />
+        <output name="Normal" type="vector" />
+        <output name="DirtStrength" type="float" />
+        <output name="DirtBSDF" type="closure" />
+      </group>
+      <value name="MinRoughness" value="0.05000000149011612" />
+      <value name="MaxRoughness" value="0.5" />
+      <group group_name="NormalGroup" name="NormalGroup">
+        <output name="Normal" type="vector" />
+      </group>
+      <vector_transform convert_from="object" convert_to="world" name="VectorTransform" type="point" />
+      <texture_coordinate name="TextureCoordinate" />
+      <color name="RGB" value="0.549 0.615 0.901" />
+      <color name="RGB_GlowDark" value="0.549 0.615 0.901" />
+      <vector name="SubsurfaceRadius" value="0.7 0.7 0.7" />
+      <group group_name="STICKER-GROUP" name="Group">
+        <input name="Shader" type="closure" />
+        <output name="Shader" type="closure" />
+      </group>
+      <connect from_node="PrincipledBSDF" from_socket="BSDF" to_node="MixShader" to_socket="Shader1" />
+      <connect from_node="Emission" from_socket="Emission" to_node="MixShader" to_socket="Shader2" />
+      <connect from_node="TextureCoordinate" from_socket="Object" to_node="VectorTransform" to_socket="Vector" />
+      <connect from_node="RGB" from_socket="Color" to_node="UVGroup" to_socket="InColor" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="UVGroup" to_socket="WorldPos" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="BaseColor" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="SubsurfaceColor" />
+      <connect from_node="UVGroup" from_socket="OutRoughness" to_node="PrincipledBSDF" to_socket="Roughness" />
+      <connect from_node="ScratchGroup" from_socket="Normal" to_node="PrincipledBSDF" to_socket="Normal" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="ScratchGroup" to_socket="WorldPos" />
+      <connect from_node="MinRoughness" from_socket="Value" to_node="UVGroup" to_socket="MinRoughness" />
+      <connect from_node="MaxRoughness" from_socket="Value" to_node="UVGroup" to_socket="MaxRoughness" />
+      <connect from_node="DirtOnScratchMixGroup" from_socket="Shader" to_node="Group" to_socket="Shader" />
+      <connect from_node="ScratchGroup" from_socket="DirtBSDF" to_node="DirtOnScratchMixGroup" to_socket="DirtShader" />
+      <connect from_node="ScratchGroup" from_socket="DirtStrength" to_node="DirtOnScratchMixGroup" to_socket="Fac" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="DirtOnScratchMixGroup" to_socket="Vector" />
+      <connect from_node="NormalGroup" from_socket="Normal" to_node="ScratchGroup" to_socket="Normal" />
+      <connect from_node="MixShader" from_socket="Shader" to_node="DirtOnScratchMixGroup" to_socket="Shader" />
+      <connect from_node="RGB_GlowDark" from_socket="Color" to_node="Emission" to_socket="Color" />
+      <connect from_node="SubsurfaceRadius" from_socket="Vector" to_node="PrincipledBSDF" to_socket="SubsurfaceRadius" />
+      <connect from_node="Group" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    </shader>
+</material>
+<material diffuse_ao_factor="1.0" displacement_method="bump" glossy_ao_factor="0.0" heterogeneous_volume="False" name="MILKY-GLOW_IN_DARK_PURPLE" subsurface_ao_factor="0.0" subsurface_factor="1.100000023841858" transmission_ao_factor="0.0" use_local_tuning="True" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+    <shader>
+      <group group_name="DirtOnScratchMixGroup" name="DirtOnScratchMixGroup">
+        <input name="Fac" type="float" />
+        <input name="Shader" type="closure" />
+        <input name="DirtShader" type="closure" />
+        <input name="Vector" type="vector" />
+        <output name="Shader" type="closure" />
+      </group>
+      <mix_closure name="MixShader">
+        <input name="Fac" type="float" value="0.200000" />
+      </mix_closure>
+      <principled_bsdf distribution="ggx" name="PrincipledBSDF" subsurface_method="burley">
+        <input name="Subsurface" type="float" value="1.000000" />
+        <input name="Metallic" type="float" value="0.000000" />
+        <input name="Specular" type="float" value="0.500000" />
+        <input name="SpecularTint" type="float" value="0.000000" />
+        <input name="Anisotropic" type="float" value="0.000000" />
+        <input name="AnisotropicRotation" type="float" value="0.000000" />
+        <input name="Sheen" type="float" value="0.000000" />
+        <input name="SheenTint" type="float" value="0.500000" />
+        <input name="Clearcoat" type="float" value="0.000000" />
+        <input name="ClearcoatRoughness" type="float" value="0.000000" />
+        <input name="IOR" type="float" value="1.490000" />
+        <input name="Transmission" type="float" value="0.500000" />
+        <input name="TransmissionRoughness" type="float" value="0.000000" />
+        <input name="ClearcoatNormal" type="vector" value="0.0 0.0 0.0" />
+        <input name="Tangent" type="vector" value="0.0 0.0 0.0" />
+      </principled_bsdf>
+      <emission name="Emission">
+        <input name="Strength" type="float" value="2.000000" />
+      </emission>
+      <group group_name="UVGroup" name="UVGroup">
+        <input name="InColor" type="color" />
+        <input name="WorldPos" type="vector" />
+        <input name="MinRoughness" type="float" />
+        <input name="MaxRoughness" type="float" />
+        <output name="OutColor" type="color" />
+        <output name="OutRoughness" type="float" />
+      </group>
+      <group group_name="ScratchGroup" name="ScratchGroup">
+        <input name="WorldPos" type="vector" />
+        <input name="Normal" type="vector" />
+        <input name="Distance" type="float" value="0.050000" />
+        <output name="Normal" type="vector" />
+        <output name="DirtStrength" type="float" />
+        <output name="DirtBSDF" type="closure" />
+      </group>
+      <value name="MinRoughness" value="0.05000000149011612" />
+      <value name="MaxRoughness" value="0.5" />
+      <group group_name="NormalGroup" name="NormalGroup">
+        <output name="Normal" type="vector" />
+      </group>
+      <vector_transform convert_from="object" convert_to="world" name="VectorTransform" type="point" />
+      <texture_coordinate name="TextureCoordinate" />
+      <color name="RGB" value="0.701 0.313 0.8" />
+      <color name="RGB_GlowDark" value="0.701 0.313 0.8" />
+      <vector name="SubsurfaceRadius" value="0.7 0.7 0.7" />
+      <group group_name="STICKER-GROUP" name="Group">
+        <input name="Shader" type="closure" />
+        <output name="Shader" type="closure" />
+      </group>
+      <connect from_node="PrincipledBSDF" from_socket="BSDF" to_node="MixShader" to_socket="Shader1" />
+      <connect from_node="Emission" from_socket="Emission" to_node="MixShader" to_socket="Shader2" />
+      <connect from_node="TextureCoordinate" from_socket="Object" to_node="VectorTransform" to_socket="Vector" />
+      <connect from_node="RGB" from_socket="Color" to_node="UVGroup" to_socket="InColor" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="UVGroup" to_socket="WorldPos" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="BaseColor" />
+      <connect from_node="UVGroup" from_socket="OutColor" to_node="PrincipledBSDF" to_socket="SubsurfaceColor" />
+      <connect from_node="UVGroup" from_socket="OutRoughness" to_node="PrincipledBSDF" to_socket="Roughness" />
+      <connect from_node="ScratchGroup" from_socket="Normal" to_node="PrincipledBSDF" to_socket="Normal" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="ScratchGroup" to_socket="WorldPos" />
+      <connect from_node="MinRoughness" from_socket="Value" to_node="UVGroup" to_socket="MinRoughness" />
+      <connect from_node="MaxRoughness" from_socket="Value" to_node="UVGroup" to_socket="MaxRoughness" />
+      <connect from_node="DirtOnScratchMixGroup" from_socket="Shader" to_node="Group" to_socket="Shader" />
+      <connect from_node="ScratchGroup" from_socket="DirtBSDF" to_node="DirtOnScratchMixGroup" to_socket="DirtShader" />
+      <connect from_node="ScratchGroup" from_socket="DirtStrength" to_node="DirtOnScratchMixGroup" to_socket="Fac" />
+      <connect from_node="VectorTransform" from_socket="Vector" to_node="DirtOnScratchMixGroup" to_socket="Vector" />
+      <connect from_node="NormalGroup" from_socket="Normal" to_node="ScratchGroup" to_socket="Normal" />
+      <connect from_node="MixShader" from_socket="Shader" to_node="DirtOnScratchMixGroup" to_socket="Shader" />
+      <connect from_node="RGB_GlowDark" from_socket="Color" to_node="Emission" to_socket="Color" />
+      <connect from_node="SubsurfaceRadius" from_socket="Vector" to_node="PrincipledBSDF" to_socket="SubsurfaceRadius" />
+      <connect from_node="Group" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_RED" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.955 0 0.005" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.955 0 0.005" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_ORANGE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="1 0.3 0" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="1 0.3 0" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_YELLOW" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.91 0.96 0.1" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.91 0.96 0.1" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_GREEN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.058 0.458 0.058" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.058 0.458 0.058" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_CYAN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.003 1 1" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.003 1 1" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_BLUE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.050 0.117 0.709" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.050 0.117 0.709" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_PURPLE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.301 0.074 0.658" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.301 0.074 0.658" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-GLOWING_NEON_MAGENTA" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="1 0.027 0.227" />
+    <add_closure name="AddShader" />
+    <translucent_bsdf name="TranslucentBSDF">
+      <input name="Normal" type="vector" value="0.0 0.0 0.0" />
+    </translucent_bsdf>
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="1 0.027 0.227" />
+      <input name="Strength" type="float" value="10.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+    <connect from_node="RGB" from_socket="Color" to_node="TranslucentBSDF" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="AddShader" to_socket="Shader1" />
+    <connect from_node="AddShader" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="TranslucentBSDF" from_socket="BSDF" to_node="AddShader" to_socket="Shader2" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_SOFT_WHITE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.984 0.984 0.984" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.984 0.984 0.984" />
+      <input name="Strength" type="float" value="5.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_SOFT_WARM_WHITE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.749 0.458 0.239" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.749 0.458 0.239" />
+      <input name="Strength" type="float" value="5.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_SOFT_RED" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.678 0 0" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.678 0 0" />
+      <input name="Strength" type="float" value="5.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_SOFT_AMBER" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.709 0.329 0.054" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.709 0.329 0.054" />
+      <input name="Strength" type="float" value="5.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_SOFT_GREEN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.023 0.458 0.176" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.023 0.458 0.176" />
+      <input name="Strength" type="float" value="5.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_SOFT_BLUE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.007 0.090 0.431" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.007 0.090 0.431" />
+      <input name="Strength" type="float" value="5.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_WHITE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.984 0.984 0.984" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.984 0.984 0.984" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_RED" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.678 0 0" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.678 0 0" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_AMBER" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.709 0.329 0.054" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.709 0.329 0.054" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_ORANGE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="1 0.3 0" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="1 0.3 0" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_YELLOW" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.91 0.96 0.1" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.91 0.96 0.1" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_GREEN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.023 0.458 0.176" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.023 0.458 0.176" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_CYAN" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.003 1 1" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.003 1 1" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_BLUE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.007 0.090 0.431" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.007 0.090 0.431" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_PURPLE" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="0.301 0.074 0.658" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="0.301 0.074 0.658" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+<material displacement_method="bump" heterogeneous_volume="False" name="TRANS-LUMINOUS_MAGENTA" use_local_tuning="False" use_mis="True" use_transparent_shadow="True" volume_interpolation_method="linear" volume_sampling_method="multiple_importance">
+  <shader>
+    <color name="RGB_White" value="1.0 1.0 1.0" />
+    <color name="RGB" value="1 0.027 0.227" />
+    <group group_name="TRANS-GROUP_BASE" name="TRANS-GROUP_BASE">
+      <input name="WhiteColor" type="color" />
+      <input name="Color" type="color" />
+      <output name="Shader" type="closure" />
+      <output name="Volume" type="closure" />
+      <output name="Normal" type="vector" />
+    </group>
+    <emission name="Emission">
+      <input name="Color" type="color" value="1 0.027 0.227" />
+      <input name="Strength" type="float" value="20.000000" />
+    </emission>
+    <connect from_node="Emission" from_socket="Emission" to_node="Output" to_socket="Surface" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Shader" to_node="Output" to_socket="Surface" />
+    <connect from_node="RGB" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="Color" />
+    <connect from_node="TRANS-GROUP_BASE" from_socket="Volume" to_node="Output" to_socket="Volume" />
+    <connect from_node="RGB_White" from_socket="Color" to_node="TRANS-GROUP_BASE" to_socket="WhiteColor" />
+  </shader>
+</material>
+</eyesight>
